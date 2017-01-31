@@ -74,7 +74,7 @@ namespace Yargon.JsonRpc
         /// <inheritdoc />
         public override string ToString()
         {
-            return this.Error.ToString();
+            return $"{base.ToString()}: {this.Error}";
         }
     }
 }

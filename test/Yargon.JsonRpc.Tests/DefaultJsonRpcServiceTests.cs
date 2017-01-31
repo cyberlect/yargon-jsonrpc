@@ -35,7 +35,7 @@ namespace Yargon.JsonRpc
 
             // Assert
             var result = JsonConvert.DeserializeObject<JsonResponse>(output);
-            var expected = new JsonError(null, new JsonErrorObject(-32601, "Method not found"));
+            var expected = new JsonError("1", new JsonErrorObject(-32601, "Method not found"));
             Assert.That(result, Is.EqualTo(expected).Using<JsonResponse>(new JsonResponseComparer()));
         }
     }

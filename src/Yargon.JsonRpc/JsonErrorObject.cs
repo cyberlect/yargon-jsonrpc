@@ -95,7 +95,7 @@ namespace Yargon.JsonRpc
         /// <inheritdoc />
         public override string ToString()
         {
-            if (this.Data != null)
+            if (!String.IsNullOrWhiteSpace((this.Data as JValue)?.Value as String))
                 return $"{this.Code}: {this.Message} -- {this.Data}";
             else
                 return $"{this.Code}: {this.Message}";

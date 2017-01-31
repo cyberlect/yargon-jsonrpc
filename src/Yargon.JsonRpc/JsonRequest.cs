@@ -112,7 +112,7 @@ namespace Yargon.JsonRpc
         /// <inheritdoc />
         public override string ToString()
         {
-            return this.Method;
+            return $"{base.ToString()}: {this.Method}({this.Parameters})";
         }
     }
 }
