@@ -10,12 +10,12 @@ namespace Yargon.JsonRpc
     /// <summary>
     /// Request handler that uses reflection to discover the method a service instance supports.
     /// </summary>
-    public sealed class ReflectionServiceHandler<T> : RequestHandlerBase
+    public sealed partial class ReflectionServiceHandler<T> : RequestHandlerBase
     {
         /// <summary>
         /// The supported method names (without the prefix).
         /// </summary>
-        private readonly IReadOnlyDictionary<string, object> methods;
+        private readonly IReadOnlyDictionary<string, RpcMethod> methods;
 
         /// <summary>
         /// Gets the method prefix to use for this service.
@@ -84,7 +84,10 @@ namespace Yargon.JsonRpc
                 }
 
                 string methodName = methodAttr.MethodName ?? method.Name;
-
+                foreach (var parameter in method.GetParameters())
+                {
+                    
+                }
                 // TODO: Parameters
             }
         }

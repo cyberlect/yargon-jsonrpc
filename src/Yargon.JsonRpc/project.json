@@ -21,7 +21,7 @@
 
   "dependencies": {
     "Newtonsoft.Json": "9.0.1",
-    "Virtlink.Utilib": "1.14.0"
+    "Virtlink.Utilib": "1.15.0"
   },
 
   "frameworks": {
