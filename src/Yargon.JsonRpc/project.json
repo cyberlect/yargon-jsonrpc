@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-*",
+  "version": "0.1.0-alpha",
 
   "title": "Yargon JSON Rpc",
   "copyright": "Copyright - Daniel Pelsmaeker",
@@ -9,7 +9,7 @@
 
   "packOptions": {
     "summary": "An implementation of the JSON 2.0 RPC protocol.",
-    "tags": [ "cyberlect", "json", "rpc", "protocol", "virtlink", ],
+    "tags": [ "cyberlect", "json", "rpc", "protocol", "virtlink" ],
     "projectUrl": "https://github.com/Cyberlect/yargon-langserv/",
     "licenseUrl": "https://github.com/Cyberlect/yargon-langserv/blob/master/License.md",
 
