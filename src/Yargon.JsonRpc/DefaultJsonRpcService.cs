@@ -62,7 +62,7 @@ namespace Yargon.JsonRpc
             if (handler == null)
                 throw new MethodNotFoundException($"The method '{request.Method}' was not found.");
 
-            return handler.Handle(request);
+            return handler.Handle(request, this.Serializer);
         }
     }
 }

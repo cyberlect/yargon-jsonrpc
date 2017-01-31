@@ -1,4 +1,6 @@
-﻿namespace Yargon.JsonRpc
+﻿using Newtonsoft.Json;
+
+namespace Yargon.JsonRpc
 {
     /// <summary>
     /// A JSON RPC request handler.
@@ -9,8 +11,9 @@
         /// Handles the specified request.
         /// </summary>
         /// <param name="request">The request to handle.</param>
+        /// <param name="serializer">The serializer to use.</param>
         /// <returns>The response.</returns>
-        JsonResponse Handle(JsonRequest request);
+        JsonResponse Handle(JsonRequest request, JsonSerializer serializer);
 
         /// <summary>
         /// Gets whether the handler can handle a request for the specified method.
