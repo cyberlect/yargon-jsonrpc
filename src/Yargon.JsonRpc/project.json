@@ -1,29 +1,23 @@
 {
-  "version": "0.1.0-alpha",
-
+  "version": "0.1.1-alpha",
   "title": "Yargon JSON Rpc",
   "copyright": "Copyright - Daniel Pelsmaeker",
   "description": "An implementation of the JSON 2.0 RPC protocol.",
-
   "authors": [ "Daniel Pelsmaeker" ],
-
   "packOptions": {
     "summary": "An implementation of the JSON 2.0 RPC protocol.",
     "tags": [ "cyberlect", "json", "rpc", "protocol", "virtlink" ],
     "projectUrl": "https://github.com/Cyberlect/yargon-langserv/",
     "licenseUrl": "https://github.com/Cyberlect/yargon-langserv/blob/master/License.md",
-
     "repository": {
       "type": "git",
       "url": "git://github.com/Cyberlect/yargon-langserv"
     }
   },
-
   "dependencies": {
     "Newtonsoft.Json": "9.0.1",
-    "Virtlink.Utilib": "1.15.0"
+    "Virtlink.Utilib": "1.17.1"
   },
-
   "frameworks": {
     "netstandard1.0": {
       "imports": "dnxcore50",
@@ -41,5 +35,8 @@
       "dependencies": {
       }
     }
+  },
+  "buildOptions": {
+    "xmlDoc": true
   }
 }
