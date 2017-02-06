@@ -1,6 +1,6 @@
 [![AppVeyor](https://img.shields.io/appveyor/ci/Virtlink/yargon-jsonrpc.svg)](https://ci.appveyor.com/project/Virtlink/yargon-jsonrpc)
 [![GitHub release](https://img.shields.io/github/release/Cyberlect/yargon-jsonrpc.svg)](https://github.com/Cyberlect/yargon-jsonrpc/releases)
-[![NuGet](https://img.shields.io/nuget/v/Yargon.LanguageServer.svg)](https://www.nuget.org/packages/Yargon.JsonRpc/)
+[![NuGet](https://img.shields.io/nuget/v/Yargon.JsonRpc.svg)](https://www.nuget.org/packages/Yargon.JsonRpc/)
 [![GitHub license](https://img.shields.io/github/license/Cyberlect/yargon-jsonrpc.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/Cyberlect/yargon-jsonrpc/commits/master)
 
